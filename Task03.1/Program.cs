@@ -1,5 +1,5 @@
 ﻿Console.WriteLine ("Введите число от 1 до 7: ");
-String day = Console.ReadLine ();
+string day = Console.ReadLine ();
 switch (day)
 {
     case "1":
