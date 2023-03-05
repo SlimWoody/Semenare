@@ -5,14 +5,15 @@
 
 Console.WriteLine("Введите номер четверти: ");
 int quarterNumber = Convert.ToInt32(Console.ReadLine());
+string rangeCoordinate = RangeCoordinate (quarterNumber);
 
-string result = int
+Console.WriteLine (rangeCoordinate);
 
-string RangeCoordinate (int n)
+string RangeCoordinate (int quarter)
 {
-    if (n==1) return "x > 0, y > 0";
-    if(n==2) return "x < 0, y > 0";
-    if(n==3) return "x < 0, y < 0";
-    if(n==4) return "x > 0, y < 0";
-    return 0;
+    if (quarter==1) return "x > 0, y > 0";
+    if(quarter==2) return "x < 0, y > 0";
+    if(quarter==3) return "x < 0, y < 0";
+    if(quarter==4) return "x > 0, y < 0";
+    return "неверное значение";
 }
