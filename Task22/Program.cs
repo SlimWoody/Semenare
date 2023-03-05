@@ -7,13 +7,13 @@
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number>0)
+if (number > 0)
 {
-  TableSquares(number);
+    TableSquares(number);
 }
-else 
+else
 {
-    Console.WriteLine ("Введено некорректное число");
+    Console.WriteLine("Введено некорректное число");
 }
 
 
@@ -22,7 +22,7 @@ void TableSquares(int num)
     int i = 1;
     while (i <= num)
     {
-        Console.WriteLine($"{i, 4} ->{i * i, 4}");
+        Console.WriteLine($"{i,4} -> {i * i,4}");
         i++;
     }
 }
