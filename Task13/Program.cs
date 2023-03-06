@@ -10,24 +10,26 @@
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int threeDigit = ThreeDigit(number);
-Console.WriteLine(threeDigit);
 
+if (number > 99)
+{
+    int threeDigit = ThreeDigit(number);
+    Console.WriteLine($"Третья цифра числа {number} -> {threeDigit}");
+}
+else
+{
+    Console.WriteLine("Третьей цыфры нет!");
+}
 int ThreeDigit(int num)
 {
-    if (num < 100)
+
+    while (num > 999)
     {
-        Console.WriteLine("Нет третьего числа");
+        num = num / 10;
     }
-    else
-    {
-        while (num > 999)
-        {
-            num = num / 10;
-        }
-        num = num % 10;
-        
-    }
+    num = num % 10;
+
+
     return num;
 }
 
