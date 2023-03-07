@@ -8,17 +8,19 @@
 Console.Write("Введи цифру от 1 до 7: ");
 int dayNumber = Convert.ToInt32(Console.ReadLine());
 
-CheckingTheDayOfTheWeek (dayNumber);
+CheckingTheDayOfTheWeek(dayNumber);
 
-void CheckingTheDayOfTheWeek (int day)
- {
-  if (day == 6 || day == 7) {
-  Console.WriteLine("да");
-  }
-  else if (day< 1 || day > 7) {
-    Console.WriteLine("вне диапазона от 1-7");
-  }
-  else Console.WriteLine("нет");
+void CheckingTheDayOfTheWeek(int day)
+{
+    if (day == 6 || day == 7)
+    {
+        Console.WriteLine("да");
+    }
+    else if (day < 1 || day > 7)
+    {
+        Console.WriteLine("вне диапазона от 1-7");
+    }
+    else Console.WriteLine("нет");
 }
 
 
