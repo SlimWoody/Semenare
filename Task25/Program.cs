@@ -6,13 +6,13 @@
 
 // 2, 4 -> 16
 
-Console.WriteLine("Введите два положительных числа");
+Console.WriteLine("Введите два числа");
 Console.WriteLine("Первое число: ");
 int numberA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Второе число: ");
+Console.WriteLine("Второе число положительное: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
-if (numberA>0 && numberB>0)
+if (numberB>0)
 {
 int extentNumber = ExtentNumber(numberA, numberB);
 Console.WriteLine($"Число {numberA} натуральнтуральная степень {numberB} -> {extentNumber} ");
