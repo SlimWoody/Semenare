@@ -9,6 +9,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 int quantityNumber = QuantityNumber (number);
 Console.WriteLine($"Количество цифр в числе {number} -> {quantityNumber} ");
 
+
 int QuantityNumber (int num)  
 {
     int count = 0;

@@ -20,6 +20,7 @@ else
 {
     Console.WriteLine("Третьей цыфры нет!");
 }
+
 int ThreeDigit(int num)
 {
 
