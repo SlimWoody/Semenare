@@ -15,7 +15,7 @@ double[] CreateArrayRndDouble(int size, int min, int max)
     Random rnd = new Random();
     for (int i = 0; i < size; i++)
     {
-        double num = rnd.NextDouble() * (max - min) + min;
+        double num = rnd.NextDouble () * (max - min) + min;
         arr[i] = Math.Round(num, 1);
     }
     return arr;

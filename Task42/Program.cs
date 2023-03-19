@@ -6,12 +6,12 @@
 
 Console.Write("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
-Console.Write($"{number} -> {ToBinary(number)}.");
+Console.Write($"{number} -> {ToBinary(number)}");
 
 
-int ToBinary(int numberValue)
+int ToBinary(int numb)
 {
-    int binaryNumber = 0, buffer = numberValue, dec = 1;
+    int binaryNumber = 0, buffer = numb, dec = 1;
     while (buffer > 0)
     {
         binaryNumber = binaryNumber + buffer % 2 * dec;

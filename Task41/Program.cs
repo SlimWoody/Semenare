@@ -14,16 +14,10 @@ Console.WriteLine($"--> {postiveNumber}");
 int[] RequestNumberArray(int num)
 {
     int[] arr = new int[num];
-    for (int i = 1; i <= num; i++)
+    for (int i = 0; i < num; i++)
     {
-        for (int j = 0; j < num; j++)
-        {
-            Console.Write($"Введите число {i}: ");
-            arr[j] = Convert.ToInt32(Console.ReadLine());
-            i++;
-        }
-
-
+            Console.Write($"Введите число {i+1}: ");
+            arr[i] = Convert.ToInt32(Console.ReadLine());
     }
     return arr;
 }
