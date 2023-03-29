@@ -20,13 +20,20 @@ else
 }
 
 
-int Akkerman(int numN, int numM)
+int Akkerman(int numM, int numN)
 {
-    if (numN == 0) return numM + 1;
-    if (numN != 0 && numM == 0) return Akkerman(numN - 1, 1);
-    if (numN > 0 && numM > 0) return Akkerman(numN - 1, Akkerman(numN, numM - 1));
-    return Akkerman(numN, numM);
+    if (numM == 0) return numN + 1;
+    else if (numN == 0) return Akkerman(numM - 1, 1);
+    else return Akkerman(numM - 1, Akkerman(numM, numN - 1));
 }
+
+// функция ack(n, m)
+//    если n = 0
+//      вернуть m + 1
+//    иначе, если m = 0
+//      вернуть ack (n - 1, 1)
+//    еще
+//      вернуть ack(n - 1, ack (n, m - 1))
 
 int Input(string text)
 {
